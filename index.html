@@ -1,323 +1,711 @@
 <!DOCTYPE html>
+<html class="light" lang="en">
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>The Masters of Food UK</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "error": "#ba1a1a",
-                    "tertiary-container": "#cca730",
-                    "outline-variant": "#d5c3b8",
-                    "inverse-surface": "#30312e",
-                    "secondary-fixed-dim": "#b4cdb8",
-                    "secondary-fixed": "#d0e9d4",
-                    "on-primary-fixed-variant": "#653d1e",
-                    "surface-container-lowest": "#ffffff",
-                    "surface": "#fbf9f5",
-                    "surface-container-highest": "#e4e2de",
-                    "on-surface": "#1b1c1a",
-                    "secondary": "#4d6453",
-                    "surface-container-high": "#eae8e4",
-                    "on-primary-fixed": "#301400",
-                    "tertiary-fixed-dim": "#e9c349",
-                    "primary-fixed-dim": "#f4bb92",
-                    "surface-container": "#efeeea",
-                    "on-secondary-container": "#516857",
-                    "outline": "#83746b",
-                    "inverse-primary": "#f4bb92",
-                    "tertiary": "#735c00",
-                    "inverse-on-surface": "#f2f0ed",
-                    "surface-container-low": "#f5f3ef",
-                    "primary-container": "#8b5e3c",
-                    "on-tertiary-fixed": "#241a00",
-                    "on-secondary": "#ffffff",
-                    "on-error-container": "#93000a",
-                    "on-secondary-fixed": "#0b2013",
-                    "primary": "#6f4627",
-                    "secondary-container": "#cde6d1",
-                    "on-tertiary": "#ffffff",
-                    "surface-tint": "#805533",
-                    "on-surface-variant": "#51443c",
-                    "on-error": "#ffffff",
-                    "on-primary-container": "#ffe3d1",
-                    "primary-fixed": "#ffdcc5",
-                    "on-secondary-fixed-variant": "#364c3c",
-                    "surface-dim": "#dbdad6",
-                    "tertiary-fixed": "#ffe088",
-                    "surface-variant": "#e4e2de",
-                    "on-tertiary-fixed-variant": "#574500",
-                    "background": "#fbf9f5",
-                    "on-primary": "#ffffff",
-                    "error-container": "#ffdad6",
-                    "on-tertiary-container": "#4e3d00",
-                    "on-background": "#1b1c1a",
-                    "surface-bright": "#fbf9f5"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {
-                    "margin-mobile": "16px",
-                    "margin-desktop": "64px",
-                    "container-max": "1280px",
-                    "gutter": "24px",
-                    "section-gap": "120px",
-                    "base": "8px"
-            },
-            "fontFamily": {
-                    "body-lg": [
-                            "Manrope"
-                    ],
-                    "headline-lg-mobile": [
-                            "Playfair Display"
-                    ],
-                    "display-lg": [
-                            "Playfair Display"
-                    ],
-                    "headline-lg": [
-                            "Playfair Display"
-                    ],
-                    "headline-md": [
-                            "Playfair Display"
-                    ],
-                    "body-md": [
-                            "Manrope"
-                    ],
-                    "label-sm": [
-                            "Manrope"
-                    ]
-            },
-            "fontSize": {
-                    "body-lg": [
-                            "18px",
-                            {
-                                    "lineHeight": "28px",
-                                    "fontWeight": "400"
-                            }
-                    ],
-                    "headline-lg-mobile": [
-                            "32px",
-                            {
-                                    "lineHeight": "40px",
-                                    "fontWeight": "700"
-                            }
-                    ],
-                    "display-lg": [
-                            "64px",
-                            {
-                                    "lineHeight": "72px",
-                                    "letterSpacing": "-0.02em",
-                                    "fontWeight": "700"
-                            }
-                    ],
-                    "headline-lg": [
-                            "40px",
-                            {
-                                    "lineHeight": "48px",
-                                    "fontWeight": "700"
-                            }
-                    ],
-                    "headline-md": [
-                            "28px",
-                            {
-                                    "lineHeight": "36px",
-                                    "fontWeight": "600"
-                            }
-                    ],
-                    "body-md": [
-                            "16px",
-                            {
-                                    "lineHeight": "24px",
-                                    "fontWeight": "400"
-                            }
-                    ],
-                    "label-sm": [
-                            "12px",
-                            {
-                                    "lineHeight": "16px",
-                                    "letterSpacing": "0.05em",
-                                    "fontWeight": "600"
-                            }
-                    ]
-            }
-    },
-        },
-      }
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>The Masters of Food UK</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
     </script>
-<style>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#cca730",
+                        "outline-variant": "#d5c3b8",
+                        "inverse-surface": "#30312e",
+                        "secondary-fixed-dim": "#b4cdb8",
+                        "secondary-fixed": "#d0e9d4",
+                        "on-primary-fixed-variant": "#653d1e",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#fbf9f5",
+                        "surface-container-highest": "#e4e2de",
+                        "on-surface": "#1b1c1a",
+                        "secondary": "#4d6453",
+                        "surface-container-high": "#eae8e4",
+                        "on-primary-fixed": "#301400",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "primary-fixed-dim": "#f4bb92",
+                        "surface-container": "#efeeea",
+                        "on-secondary-container": "#516857",
+                        "outline": "#83746b",
+                        "inverse-primary": "#f4bb92",
+                        "tertiary": "#735c00",
+                        "inverse-on-surface": "#f2f0ed",
+                        "surface-container-low": "#f5f3ef",
+                        "primary-container": "#8b5e3c",
+                        "on-tertiary-fixed": "#241a00",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed": "#0b2013",
+                        "primary": "#6f4627",
+                        "secondary-container": "#cde6d1",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#805533",
+                        "on-surface-variant": "#51443c",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#ffe3d1",
+                        "primary-fixed": "#ffdcc5",
+                        "on-secondary-fixed-variant": "#364c3c",
+                        "surface-dim": "#dbdad6",
+                        "tertiary-fixed": "#ffe088",
+                        "surface-variant": "#e4e2de",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "background": "#fbf9f5",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#4e3d00",
+                        "on-background": "#1b1c1a",
+                        "surface-bright": "#fbf9f5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "section-gap": "120px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Manrope"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "body-md": ["Manrope"],
+                        "label-sm": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "fontWeight": "700" }],
+                        "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
         body {
             background-color: theme('colors.surface');
             color: theme('colors.on-surface');
             -webkit-font-smoothing: antialiased;
         }
-        
+
         .shadow-soft {
             box-shadow: 0px 4px 20px rgba(27, 48, 34, 0.04);
         }
-        
+
         .border-sand {
             border-color: theme('colors.outline-variant');
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Mobile menu slide */
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+
+        /* Back to top button */
+        .back-to-top {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Modal overlay */
+        .modal-overlay {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .modal-overlay.open {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-box {
+            transform: scale(0.95) translateY(20px);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .modal-overlay.open .modal-box {
+            transform: scale(1) translateY(0);
+        }
+
+        /* Hover image zoom */
+        .product-card .product-image {
+            transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .product-card:hover .product-image {
+            transform: scale(1.06);
+        }
+
+        /* Nav link underline hover */
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: theme('colors.primary');
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .nav-link.dark::after {
+            background-color: theme('colors.primary-fixed');
+        }
+
+        /* Button shine */
+        .btn-shine {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-shine::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent 40%, rgba(255, 255, 255, 0.15) 50%, transparent 60%);
+            transform: translateX(-100%) rotate(25deg);
+            transition: transform 0.8s ease;
+        }
+        .btn-shine:hover::after {
+            transform: translateX(100%) rotate(25deg);
+        }
+
+        /* Scroll indicator pulse */
+        @keyframes pulse-arrow {
+            0%,
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(6px);
+                opacity: 0.5;
+            }
+        }
+        .scroll-arrow {
+            animation: pulse-arrow 2s ease-in-out infinite;
+        }
     </style>
 </head>
+
 <body class="bg-surface text-on-surface">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md shadow-sm dark:shadow-none bg-surface/90 dark:bg-surface-dim/90">
-<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
-<a class="font-display-lg text-headline-md text-primary dark:text-primary-fixed uppercase tracking-tighter hover:text-tertiary transition-all duration-300" href="#">
+
+    <!-- ====== TOP NAVBAR ====== -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-sm transition-shadow duration-300" style="background-color: rgba(251, 249, 245, 0.95);">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+            <!-- Logo -->
+            <a class="font-display-lg text-headline-md text-primary uppercase tracking-tighter hover:text-tertiary transition-all duration-300" href="#">
                 The Masters of Food
             </a>
-<div class="hidden md:flex items-center space-x-gutter">
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors font-body-md text-body-md tracking-wider hover:text-tertiary transition-all duration-300" href="#">About</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors font-body-md text-body-md tracking-wider hover:text-tertiary transition-all duration-300" href="#">Our Products</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors font-body-md text-body-md tracking-wider hover:text-tertiary transition-all duration-300" href="#">Our Story</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors font-body-md text-body-md tracking-wider hover:text-tertiary transition-all duration-300" href="#">Wholesale</a>
-<a class="text-on-surface-variant dark:text-outline-variant hover:text-primary transition-colors font-body-md text-body-md tracking-wider hover:text-tertiary transition-all duration-300" href="#">Contact Us</a>
-</div>
-<div class="hidden md:block">
-<button class="bg-primary text-on-primary font-body-md font-bold px-6 py-2 rounded-lg hover:bg-primary-container transition-colors duration-300">
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center space-x-gutter">
+                <a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md tracking-wider" href="#about">About</a>
+                <a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md tracking-wider" href="#products">Our Products</a>
+                <a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md tracking-wider" href="#story">Our Story</a>
+                <a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md tracking-wider" href="#wholesale">Wholesale</a>
+                <a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md tracking-wider" href="#contact">Contact Us</a>
+            </div>
+
+            <!-- Desktop CTA -->
+            <div class="hidden md:block">
+                <button onclick="openModal()" class="btn-shine bg-primary text-on-primary font-body-md font-bold px-6 py-2.5 rounded-lg hover:bg-primary-container transition-colors duration-300 cursor-pointer">
                     Enquire
                 </button>
-</div>
-<!-- Mobile Menu Button -->
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined text-3xl">menu</span>
-</button>
-</div>
-</nav>
-<!-- Main Content Canvas -->
-<main class="pt-24 md:pt-32 pb-section-gap">
-<!-- Hero Section -->
-<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-<div class="space-y-8 order-2 lg:order-1">
-<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary">Authentic Balkan Baking, Made for the UK</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menuToggle" class="md:hidden text-primary cursor-pointer" aria-label="Toggle menu">
+                <span id="menuIcon" class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Slide-out -->
+        <div id="mobileMenu" class="mobile-menu fixed top-20 right-0 w-64 h-[calc(100vh-5rem)] bg-surface-container-lowest shadow-xl border-l border-sand p-6 flex flex-col gap-6 md:hidden">
+            <a class="text-on-surface-variant font-body-md text-body-md tracking-wider hover:text-primary transition-colors" href="#about" onclick="closeMobileMenu()">About</a>
+            <a class="text-on-surface-variant font-body-md text-body-md tracking-wider hover:text-primary transition-colors" href="#products" onclick="closeMobileMenu()">Our Products</a>
+            <a class="text-on-surface-variant font-body-md text-body-md tracking-wider hover:text-primary transition-colors" href="#story" onclick="closeMobileMenu()">Our Story</a>
+            <a class="text-on-surface-variant font-body-md text-body-md tracking-wider hover:text-primary transition-colors" href="#wholesale" onclick="closeMobileMenu()">Wholesale</a>
+            <a class="text-on-surface-variant font-body-md text-body-md tracking-wider hover:text-primary transition-colors" href="#contact" onclick="closeMobileMenu()">Contact Us</a>
+            <hr class="border-sand" />
+            <button onclick="openModal(); closeMobileMenu();" class="bg-primary text-on-primary font-body-md font-bold px-6 py-3 rounded-lg hover:bg-primary-container transition-colors duration-300 w-full text-center cursor-pointer">
+                Enquire
+            </button>
+        </div>
+    </nav>
+
+    <!-- ====== MAIN ====== -->
+    <main class="pt-24 md:pt-32 pb-section-gap">
+
+        <!-- ====== HERO ====== -->
+        <section id="about" class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap scroll-mt-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8 order-2 lg:order-1">
+                    <div class="inline-flex items-center gap-2 bg-tertiary-container/10 text-tertiary px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide">
+                        <span class="material-symbols-outlined text-lg">stars</span>
+                        Authentic Balkan Baking
+                    </div>
+                    <h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary leading-tight">
+                        Authentic Balkan Baking, <br class="hidden sm:block" />Made for the UK
+                    </h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
                         Premium Balkan pastries and desserts made with carefully selected ingredients and a focus on authentic flavour and quality.
                     </p>
-<div class="flex flex-col sm:flex-row gap-4">
-<button class="bg-primary text-on-primary font-body-md font-bold px-8 py-4 rounded-lg hover:bg-primary-container transition-colors duration-300 text-center">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#products" class="btn-shine bg-primary text-on-primary font-body-md font-bold px-8 py-4 rounded-lg hover:bg-primary-container transition-colors duration-300 text-center cursor-pointer">
                             Explore Our Products
-                        </button>
-<button class="border-[1.5px] border-primary text-primary font-body-md font-bold px-8 py-4 rounded-lg hover:bg-surface-container transition-colors duration-300 text-center">
+                        </a>
+                        <a href="#contact" class="border-[1.5px] border-primary text-primary font-body-md font-bold px-8 py-4 rounded-lg hover:bg-surface-container transition-colors duration-300 text-center cursor-pointer">
                             Get in Touch
-                        </button>
-</div>
-</div>
-<div class="order-1 lg:order-2 h-[400px] lg:h-[600px] w-full rounded-xl overflow-hidden shadow-soft">
-<img class="w-full h-full object-cover" data-alt="A stunning, high-end photograph of traditional Balkan pastries like Burek and Baklava, beautifully arranged on a rustic yet elegant wooden table. The scene is lit with natural, soft window light, casting gentle shadows that highlight the flaky textures. A warm, cream and pale tan color palette dominates, creating an inviting, slow-food aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpoS5w42HXRlPcm-9zGSaT1d1VhEalHt6pJAV5ZqUAOypePKwQrqALjJxFEMqmnBNVM7y4DWW_b6EkRGQvejsqmfhyZjyAE8vjVFfokGTAWNWMW3YF2Rp5tuqjm47NRr0bYGqm2EN10rP3b_yBsHtEjoJDCz6oE3Tv6hiJ7vAeYJ_wdWGg36hevoqYq2iPlQYuOS4GmRbMzUSo0D9NbTuW8KEkm6MqC4mE79VpKIG_-QmC2mEoEKdH"/>
-</div>
-</div>
-</section>
-<!-- Visitor Pathways (Bento Style) -->
-<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-<!-- For Businesses -->
-<div class="bg-surface-container-lowest rounded-xl p-10 shadow-soft border border-sand flex flex-col justify-between group hover:border-primary transition-colors duration-500">
-<div class="space-y-4 mb-12">
-<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">For Businesses</span>
-<h2 class="font-headline-md text-headline-md text-primary">Looking to stock our products?</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-6 text-sm text-on-surface-variant/70">
+                        <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-base">verified</span> Family recipe</span>
+                        <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-base">local_shipping</span> UK delivery</span>
+                        <span class="flex items-center gap-1"><span class="material-symbols-outlined text-primary text-base">star</span> Premium quality</span>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 h-[400px] lg:h-[600px] w-full rounded-xl overflow-hidden shadow-soft relative">
+                    <img class="w-full h-full object-cover" alt="Traditional Balkan pastries like Burek and Baklava beautifully arranged on a rustic wooden table" src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=800&h=600&fit=crop&crop=center" />
+                    <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2 text-xs text-on-surface/60 flex items-center gap-2 shadow-sm">
+                        <span class="material-symbols-outlined text-primary text-sm">photo_camera</span>
+                        Artisanal bakes
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== VISITOR PATHWAYS (Bento) ====== -->
+        <section id="wholesale" class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap scroll-mt-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+                <!-- For Businesses -->
+                <div class="bg-surface-container-lowest rounded-xl p-10 shadow-soft border border-sand flex flex-col justify-between group hover:border-primary transition-colors duration-500 hover:shadow-lg">
+                    <div class="space-y-4 mb-12">
+                        <span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">storefront</span>
+                            For Businesses
+                        </span>
+                        <h2 class="font-headline-md text-headline-md text-primary">Looking to stock our products?</h2>
+                        <p class="font-body-md text-body-md text-on-surface-variant">
                             Discover our range and get in touch about supplying your business with premium authentic bakes.
                         </p>
-</div>
-<a class="inline-flex items-center text-primary font-body-md font-bold group-hover:text-tertiary transition-colors" href="#">
+                    </div>
+                    <a href="#contact" class="inline-flex items-center text-primary font-body-md font-bold group-hover:text-tertiary transition-colors cursor-pointer">
                         Enquire About Wholesale
                         <span class="material-symbols-outlined ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span>
-</a>
-</div>
-<!-- For Customers -->
-<div class="bg-surface-container-lowest rounded-xl p-10 shadow-soft border border-sand flex flex-col justify-between group hover:border-primary transition-colors duration-500">
-<div class="space-y-4 mb-12">
-<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">For Customers</span>
-<h2 class="font-headline-md text-headline-md text-primary">Discover Our Products</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">
+                    </a>
+                </div>
+
+                <!-- For Customers -->
+                <div class="bg-surface-container-lowest rounded-xl p-10 shadow-soft border border-sand flex flex-col justify-between group hover:border-primary transition-colors duration-500 hover:shadow-lg">
+                    <div class="space-y-4 mb-12">
+                        <span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">shopping_bag</span>
+                            For Customers
+                        </span>
+                        <h2 class="font-headline-md text-headline-md text-primary">Discover Our Products</h2>
+                        <p class="font-body-md text-body-md text-on-surface-variant">
                             Explore our range of authentic Balkan pastries and desserts, perfect for sharing.
                         </p>
-</div>
-<a class="inline-flex items-center text-primary font-body-md font-bold group-hover:text-tertiary transition-colors" href="#">
+                    </div>
+                    <a href="#products" class="inline-flex items-center text-primary font-body-md font-bold group-hover:text-tertiary transition-colors cursor-pointer">
                         Explore Products
                         <span class="material-symbols-outlined ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span>
-</a>
-</div>
-</div>
-</section>
-<!-- Signature Products -->
-<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap">
-<div class="text-center mb-16">
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Signature Range</h2>
-<div class="h-0.5 w-24 bg-outline-variant mx-auto"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<!-- Product 1 -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-soft border border-sand group">
-<div class="h-64 overflow-hidden">
-<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="A close-up, high-fidelity shot of a slice of traditional Burek pastry. The golden, crispy layers are perfectly illuminated against a clean, warm white background. The image evokes a sense of artisanal craftsmanship and premium quality food." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfQPzS0bBdyK8qSqJ_gq5KcVsoC6wm_nm4CF34hG03_FBeRulajr78_ROJE_aRiie2Xv1ycFYZYKtoLGz7rOvzoi1EntfHUR_Ru33Y5cru1SzoRZRw1nDq53VmO64YNxLgUq70jMUhQSB9LDHs74SgSZG0x4AKCqngRGn7IfQlHTllLV8K_2qJpiKumweNEwbB3YzgTmY1QgnC_1zkUtqzBO8EzRVYb4_lDYtBb1a93d0xGYatH2D3"/>
-</div>
-<div class="p-8">
-<h3 class="font-headline-md text-headline-md text-primary mb-3">The Master's Burek</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6 h-20">A signature Balkan pastry made with traditional inspiration and the finest ingredients.</p>
-<a class="text-primary font-body-md font-bold uppercase tracking-wider text-sm hover:text-tertiary transition-colors border-b border-transparent hover:border-tertiary pb-1" href="#">View Product</a>
-</div>
-</div>
-<!-- Product 2 -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-soft border border-sand group">
-<div class="h-64 overflow-hidden">
-<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="A beautifully plated portion of Traditional Baklava. The intricate layers of filo pastry, chopped premium nuts, and glistening syrup are captured in sharp detail. The lighting is warm and inviting, highlighting the rich textures and golden hues of the dessert." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOtcElDPvpyAsMY3wRuL3ZYORAXehvP7GAbapcSSajvvpqnJPc5ejEt5BefdPNTSShaeAkZd7Bfj6tGTN68Fg-WJROkRy75DqahwM_pIXzVODh3jL33YG-kUvlaTlAqUQBJ3Mkb6qISD4SfD4xlkQRsjGYOtM-xYF9jPDJrAT44kxGUVfEeW1SBeC9Ab7vIEPW1sxCl13utHq_jRBBVKL7uFa5hfs6Wnl-m5NN26am4G9Xk7d1st51"/>
-</div>
-<div class="p-8">
-<h3 class="font-headline-md text-headline-md text-primary mb-3">Traditional Baklava</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6 h-20">Flaky pastry layers layered with premium nuts and drenched in aromatic syrup.</p>
-<a class="text-primary font-body-md font-bold uppercase tracking-wider text-sm hover:text-tertiary transition-colors border-b border-transparent hover:border-tertiary pb-1" href="#">View Product</a>
-</div>
-</div>
-<!-- Product 3 -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-soft border border-sand group">
-<div class="h-64 overflow-hidden">
-<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="A rustic yet elegant presentation of Handmade Pitas. Golden-brown, spiraled pastries with savory fillings are shown on a wooden board. The atmosphere is warm, emphasizing slow-food traditions and authentic baking techniques." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1W7AJ0m7huEP6bgFjFbhi-8LYN_7hQOwnlksqEOQBPfEUflDVLudfSIFpT6UJ0janNZn-OWdqiKZgyEXjFskPWhUAlYV1GQ0utwOSP44GnWTCxk2Jx9JHEGNwj_qpQck5nmGQw2H8tWURp_UMXZtGjcdAqK-jLXGjECK5FUTffIelbIPqH1qe1QwEjTxIfEJTZS_D1VEMlOYoDk7MAmVu-SUcxSGknU3_QxJRZCPoBhDB_owvFO0P"/>
-</div>
-<div class="p-8">
-<h3 class="font-headline-md text-headline-md text-primary mb-3">Handmade Pitas</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6 h-20">Authentic savory fillings wrapped in crisp, hand-stretched pastry.</p>
-<a class="text-primary font-body-md font-bold uppercase tracking-wider text-sm hover:text-tertiary transition-colors border-b border-transparent hover:border-tertiary pb-1" href="#">View Product</a>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full mt-section-gap bg-surface-container-highest dark:bg-inverse-surface border-t border-outline-variant/30 flat no shadows grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop py-section-gap">
-<div class="col-span-1 md:col-span-2 space-y-4">
-<div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed mb-4">The Masters of Food</div>
-<p class="font-body-md text-body-md text-on-surface dark:text-inverse-on-surface max-w-sm">
-                © 2026 The Masters of Food UK. Balkan Tradition, British Luxury.
-            </p>
-</div>
-<div class="col-span-1">
-<h4 class="font-label-sm text-label-sm text-on-surface dark:text-inverse-on-surface mb-4 uppercase tracking-widest text-primary">Legal</h4>
-<ul class="space-y-2">
-<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-tertiary dark:hover:text-tertiary-fixed transition-colors" href="#">Privacy Policy</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-tertiary dark:hover:text-tertiary-fixed transition-colors" href="#">Terms of Service</a></li>
-</ul>
-</div>
-<div class="col-span-1">
-<h4 class="font-label-sm text-label-sm text-on-surface dark:text-inverse-on-surface mb-4 uppercase tracking-widest text-primary">Information</h4>
-<ul class="space-y-2">
-<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-tertiary dark:hover:text-tertiary-fixed transition-colors" href="#">Shipping Information</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-outline-variant hover:text-tertiary dark:hover:text-tertiary-fixed transition-colors" href="#">Accessibility</a></li>
-</ul>
-</div>
-</footer>
-</body></html>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== SIGNATURE PRODUCTS ====== -->
+        <section id="products" class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap scroll-mt-24">
+            <div class="text-center mb-16">
+                <span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">Our Range</span>
+                <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Signature Range</h2>
+                <div class="h-0.5 w-24 bg-outline-variant mx-auto"></div>
+                <p class="font-body-md text-body-md text-on-surface-variant mt-4 max-w-md mx-auto">
+                    Time-honoured recipes, crafted with passion and the finest ingredients.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                <!-- Product 1 -->
+                <div class="product-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-soft border border-sand group hover:shadow-lg transition-shadow duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <img class="product-image w-full h-full object-cover" alt="Traditional Burek pastry with golden crispy layers" src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=600&h=400&fit=crop&crop=center" />
+                        <span class="absolute top-3 right-3 bg-primary/90 text-on-primary text-xs px-3 py-1 rounded-full font-semibold tracking-wide">Bestseller</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-headline-md text-headline-md text-primary mb-3">The Master's Burek</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-6 h-20">A signature Balkan pastry made with traditional inspiration and the finest ingredients.</p>
+                        <a href="#contact" class="text-primary font-body-md font-bold uppercase tracking-wider text-sm hover:text-tertiary transition-colors border-b border-transparent hover:border-tertiary pb-1 inline-flex items-center gap-1 cursor-pointer">
+                            View Product
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-soft border border-sand group hover:shadow-lg transition-shadow duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <img class="product-image w-full h-full object-cover" alt="Traditional Baklava with layered filo and nuts" src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&h=400&fit=crop&crop=center" />
+                        <span class="absolute top-3 right-3 bg-tertiary/90 text-on-primary text-xs px-3 py-1 rounded-full font-semibold tracking-wide">Popular</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-headline-md text-headline-md text-primary mb-3">Traditional Baklava</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-6 h-20">Flaky pastry layers layered with premium nuts and drenched in aromatic syrup.</p>
+                        <a href="#contact" class="text-primary font-body-md font-bold uppercase tracking-wider text-sm hover:text-tertiary transition-colors border-b border-transparent hover:border-tertiary pb-1 inline-flex items-center gap-1 cursor-pointer">
+                            View Product
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-soft border border-sand group hover:shadow-lg transition-shadow duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <img class="product-image w-full h-full object-cover" alt="Handmade Pitas with savory fillings" src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=600&h=400&fit=crop&crop=center" />
+                        <span class="absolute top-3 right-3 bg-primary/90 text-on-primary text-xs px-3 py-1 rounded-full font-semibold tracking-wide">Artisan</span>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-headline-md text-headline-md text-primary mb-3">Handmade Pitas</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-6 h-20">Authentic savory fillings wrapped in crisp, hand-stretched pastry.</p>
+                        <a href="#contact" class="text-primary font-body-md font-bold uppercase tracking-wider text-sm hover:text-tertiary transition-colors border-b border-transparent hover:border-tertiary pb-1 inline-flex items-center gap-1 cursor-pointer">
+                            View Product
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== OUR STORY ====== -->
+        <section id="story" class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-section-gap scroll-mt-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-surface-container-lowest rounded-2xl shadow-soft border border-sand overflow-hidden">
+                <div class="h-80 lg:h-full min-h-[320px] overflow-hidden">
+                    <img class="w-full h-full object-cover" alt="Artisan bakers at work in a traditional bakery" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&h=600&fit=crop&crop=center" />
+                </div>
+                <div class="p-10 lg:p-14 space-y-6">
+                    <span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest flex items-center gap-2">
+                        <span class="material-symbols-outlined text-sm">history</span>
+                        Our Story
+                    </span>
+                    <h2 class="font-headline-lg text-headline-lg text-primary">From Family Kitchen to British Tables</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant">
+                        For three generations, our family has perfected the art of Balkan baking. We bring that same
+                        passion and authenticity to every pastry we make — using only the finest ingredients and
+                        time-honoured techniques.
+                    </p>
+                    <p class="font-body-md text-body-md text-on-surface-variant">
+                        Now based in the UK, we're proud to share our heritage with a new audience, blending
+                        tradition with the highest standards of quality.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-primary font-body-md font-bold hover:text-tertiary transition-colors cursor-pointer">
+                        Learn More
+                        <span class="material-symbols-outlined ml-2">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== CONTACT / ENQUIRY ====== -->
+        <section id="contact" class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop scroll-mt-24">
+            <div class="bg-surface-container-lowest rounded-2xl shadow-soft border border-sand p-10 md:p-14 text-center">
+                <span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined text-sm">mail</span>
+                    Get in Touch
+                </span>
+                <h2 class="font-headline-lg text-headline-lg text-primary mt-4 mb-4">Let's Work Together</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant max-w-lg mx-auto mb-8">
+                    Whether you're a business looking to stock our products or a customer wanting to place an order —
+                    we'd love to hear from you.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="openModal()" class="btn-shine bg-primary text-on-primary font-body-md font-bold px-10 py-4 rounded-lg hover:bg-primary-container transition-colors duration-300 cursor-pointer">
+                        Send an Enquiry
+                    </button>
+                    <a href="mailto:hello@mastersoffood.co.uk" class="border-[1.5px] border-primary text-primary font-body-md font-bold px-10 py-4 rounded-lg hover:bg-surface-container transition-colors duration-300 inline-flex items-center justify-center gap-2 cursor-pointer">
+                        <span class="material-symbols-outlined text-sm">email</span>
+                        hello@mastersoffood.co.uk
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="w-full mt-section-gap bg-surface-container-highest border-t border-outline-variant/30">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap grid grid-cols-1 md:grid-cols-4 gap-gutter">
+            <!-- Brand -->
+            <div class="col-span-1 md:col-span-2 space-y-4">
+                <div class="font-headline-md text-headline-md text-primary mb-4">The Masters of Food</div>
+                <p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+                    Balkan Tradition, British Luxury.
+                </p>
+                <p class="font-body-md text-body-md text-on-surface-variant/70 text-sm">
+                    © 2026 The Masters of Food UK. All rights reserved.
+                </p>
+            </div>
+
+            <!-- Legal -->
+            <div class="col-span-1">
+                <h4 class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-4">Legal</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" onclick="openLegalModal('Privacy Policy', 'We take your privacy seriously. Please contact us for our full privacy policy.')" class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-colors cursor-pointer">Privacy Policy</a></li>
+                    <li><a href="#" onclick="openLegalModal('Terms of Service', 'By using our services, you agree to our terms. Please contact us for full details.')" class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-colors cursor-pointer">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <!-- Information -->
+            <div class="col-span-1">
+                <h4 class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-4">Information</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" onclick="openLegalModal('Shipping Information', 'We deliver across the UK. Please contact us for shipping rates and timelines.')" class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-colors cursor-pointer">Shipping Information</a></li>
+                    <li><a href="#" onclick="openLegalModal('Accessibility', 'We are committed to making our products and services accessible to everyone.')" class="font-body-md text-body-md text-on-surface-variant hover:text-tertiary transition-colors cursor-pointer">Accessibility</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====== BACK TO TOP ====== -->
+    <button id="backToTop" class="back-to-top fixed bottom-8 right-8 z-40 bg-primary text-on-primary w-12 h-12 rounded-full shadow-lg hover:bg-primary-container transition-all duration-300 flex items-center justify-center cursor-pointer border-none" aria-label="Back to top">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+
+    <!-- ====== ENQUIRY MODAL ====== -->
+    <div id="enquiryModal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm">
+        <div class="modal-box bg-surface-container-lowest rounded-2xl max-w-lg w-full p-8 shadow-2xl border border-sand relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors cursor-pointer" aria-label="Close modal">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <div class="mb-6">
+                <span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest flex items-center gap-2">
+                    <span class="material-symbols-outlined text-sm">draft</span>
+                    Enquire Now
+                </span>
+                <h3 class="font-headline-md text-headline-md text-primary mt-2">Get in Touch</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant mt-1">Fill in the form and we'll get back to you within 24 hours.</p>
+            </div>
+            <form id="enquiryForm" class="space-y-5" onsubmit="handleEnquirySubmit(event)">
+                <div>
+                    <label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Full Name *</label>
+                    <input type="text" required class="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition" placeholder="Your name" />
+                </div>
+                <div>
+                    <label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Email Address *</label>
+                    <input type="email" required class="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition" placeholder="you@example.com" />
+                </div>
+                <div>
+                    <label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Subject</label>
+                    <select class="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition">
+                        <option>Wholesale enquiry</option>
+                        <option>Product information</option>
+                        <option>Order enquiry</option>
+                        <option>General question</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Message *</label>
+                    <textarea rows="4" required class="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition resize-none" placeholder="Tell us how we can help..."></textarea>
+                </div>
+                <button type="submit" class="btn-shine w-full bg-primary text-on-primary font-body-md font-bold py-3.5 rounded-lg hover:bg-primary-container transition-colors duration-300 cursor-pointer">
+                    Send Enquiry
+                </button>
+                <p class="text-xs text-on-surface-variant/60 text-center mt-2">We'll never share your details. See our <a href="#" onclick="closeModal(); openLegalModal('Privacy Policy', 'We take your privacy seriously. Please contact us for our full privacy policy.')" class="text-primary hover:underline cursor-pointer">Privacy Policy</a>.</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- ====== LEGAL MODAL ====== -->
+    <div id="legalModal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm">
+        <div class="modal-box bg-surface-container-lowest rounded-2xl max-w-md w-full p-8 shadow-2xl border border-sand relative">
+            <button onclick="closeLegalModal()" class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors cursor-pointer" aria-label="Close">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <h3 id="legalModalTitle" class="font-headline-md text-headline-md text-primary mb-3">Legal</h3>
+            <p id="legalModalBody" class="font-body-md text-body-md text-on-surface-variant">Content goes here.</p>
+            <button onclick="closeLegalModal()" class="mt-6 bg-primary text-on-primary font-body-md font-bold px-6 py-2.5 rounded-lg hover:bg-primary-container transition-colors duration-300 cursor-pointer">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <!-- ====== JAVASCRIPT ====== -->
+    <script>
+        // ----- Mobile Menu -----
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+        let menuOpen = false;
+
+        menuToggle.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+            mobileMenu.classList.toggle('open', menuOpen);
+            menuIcon.textContent = menuOpen ? 'close' : 'menu';
+        });
+
+        function closeMobileMenu() {
+            menuOpen = false;
+            mobileMenu.classList.remove('open');
+            menuIcon.textContent = 'menu';
+        }
+
+        // ----- Back to Top -----
+        const backBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backBtn.classList.add('visible');
+            } else {
+                backBtn.classList.remove('visible');
+            }
+        });
+        backBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ----- Enquiry Modal -----
+        const enquiryModal = document.getElementById('enquiryModal');
+
+        function openModal() {
+            enquiryModal.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            enquiryModal.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal on backdrop click
+        enquiryModal.addEventListener('click', (e) => {
+            if (e.target === enquiryModal) closeModal();
+        });
+
+        // Close modal on Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+                closeLegalModal();
+            }
+        });
+
+        // ----- Enquiry Form Submit -----
+        function handleEnquirySubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const name = form.querySelector('input[type="text"]').value.trim();
+            const email = form.querySelector('input[type="email"]').value.trim();
+            const msg = form.querySelector('textarea').value.trim();
+
+            if (!name || !email || !msg) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            // Simulate sending
+            const btn = form.querySelector('button[type="submit"]');
+            const originalText = btn.textContent;
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                btn.textContent = '✓ Sent!';
+                btn.style.backgroundColor = '#4CAF50';
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.disabled = false;
+                    btn.style.backgroundColor = '';
+                    closeModal();
+                    form.reset();
+                    alert('Thank you! We\'ll get back to you within 24 hours.');
+                }, 1000);
+            }, 1200);
+        }
+
+        // ----- Legal Modal -----
+        const legalModal = document.getElementById('legalModal');
+        const legalTitle = document.getElementById('legalModalTitle');
+        const legalBody = document.getElementById('legalModalBody');
+
+        function openLegalModal(title, content) {
+            legalTitle.textContent = title;
+            legalBody.textContent = content;
+            legalModal.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLegalModal() {
+            legalModal.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        legalModal.addEventListener('click', (e) => {
+            if (e.target === legalModal) closeLegalModal();
+        });
+
+        // ----- Navbar shadow on scroll -----
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+
+        // ----- Smooth scroll for all anchor links (progressive enhancement) -----
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const target = document.querySelector(targetId);
+                if (target) {
+                    e.preventDefault();
+                    const offset = 80;
+                    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                }
+            });
+        });
+
+        console.log('🍰 The Masters of Food UK — website ready.');
+    </script>
+
+</body>
+
+</html>
